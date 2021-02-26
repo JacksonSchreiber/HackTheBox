@@ -49,3 +49,20 @@
     sc.exe
     Get-Service
         Get-Service | ? {$_.Status -eq "Running"}
+**Powershell**
+
+    **Basic Powershell Commands**
+        Get-ChildItem -Recurse
+        Set-Location        //change directories
+        Get-Alias           //list aliases
+        Update-Help         //download help files
+        Get-Help <commandlet>
+
+    **Execution Policy**
+        Get-ExecutionPolicy -List
+        Set-ExecutionPolicy Bypass
+
+    **WMI**
+        Get-WmiObject
+            Get-WmiObject -class Win32_OperatingSystem | select...  //OS info
+        Invoke-WmiMethod    //call methods of WMI objects
